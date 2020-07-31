@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="font4.7/css/font-awesome.css" type="text/css">
+
+  <title> Todo List</title>
+</head>
+<body class="bg-dark">
+  
+  <div class="container">
+    <div class="row">
+      
+        <div class="col-md-4 mx-auto mt-3">
+          <div class="content p-2" style="background:whitesmoke; border-radius:5px;">
+              <h3 align='center'>Todo App</h3>
+              <div class="form-content">
+                <form action="#">
+                  <h4>Task</h4>
+                  <div class="form-group">
+                    <label for="task">Enter New Task</label>
+                    <input type="text" class="form-control" id="task">
+                  </div>
+                  <input type="submit" class="btn btn-dark" value="Add Task Todo">
+                </form>
+              </div>
+              <hr>
+              <div class="list-content">
+                <h4>Todo List</h4>
+                <input type="text" class="form-control" id="filter" placeholder="Filter Task">
+                <ul class="list-group mt-2" id='taskList'></ul>
+              <hr>
+                <h4>Completed Tasks</h4>
+                <ul class="list-group mt-2" id='completeList'></ul>
+                <input type="submit" class="btn btn-danger mt-2" value="Clear Task" id="clear">
+              </div>
+          </div>
+        </div>
+    
+    </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
